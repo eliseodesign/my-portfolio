@@ -5,12 +5,19 @@ import es from "./es";
 export const Contexto = createContext();
 
 export const Data = ({ children }) => {
-  const [language, setLanguage] = useState("en");
+  const [language, setLanguage] = useState(
+    localStorage.getItem("language") === "es" ? "es" : "en"
+  );
+  const [dark, setDark] = useState(
+    localStorage.getItem("theme") === "light" ? false : true
+  );
 
-  const dataLanguage = language === "es" ? en : es;
+  const dataLanguage = language === "en" ? en : es;
 
   return (
-    <Contexto.Provider value={{ language, setLanguage, dataLanguage }}>
+    <Contexto.Provider
+      value={{ language, setLanguage, dataLanguage, dark, setDark }}
+    >
       {children}
     </Contexto.Provider>
   );

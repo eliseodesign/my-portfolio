@@ -1,3 +1,9 @@
+@import url(./style/var.css);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
   font-size: 16px;
@@ -11,6 +17,12 @@
   -webkit-text-size-adjust: 100%;
 }
 
+
+body{
+  background:var(--background);
+  color:var(--secondary-color);
+  min-height: 100vh;
+}
 a {
   font-weight: 500;
   color: #646cff;

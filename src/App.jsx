@@ -1,7 +1,6 @@
 import { Data } from "./context/Contexto";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 // components
-import "./App.css";
 import Top from "./pages/components/Top";
 import Bottom from "./pages/components/Bottom";
 import Page from "./pages/components/Page";
@@ -15,7 +14,9 @@ import Err404 from "./pages/Err404";
 
 function App() {
   return (
+    // data es el provider
     <Data>
+      {/* <section className={dark ? "dark" : "light"}> */}
       <BrowserRouter>
         <Top />
         <Page />
@@ -29,6 +30,7 @@ function App() {
         </Routes>
       </BrowserRouter>
       <Bottom />
+      {/* </section> */}
     </Data>
   );
 }
