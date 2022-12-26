@@ -1,0 +1,29 @@
+@import url(./var.css);
+h3{
+  margin: 1em 0;
+}
+
+
+.select{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1em;
+}
+
+.select a{
+  
+  font-weight: 600;
+  text-align: center;
+  font-size: 1.1em;
+  color: var(--color);
+  width: 100%;
+  padding:1.5em 1em;
+  border-radius: .7em;
+  background:var(--text-color);
+}
+
+html[data-theme="dark"] .select a{
+  color: var(--primary);
+  background:var(--color);
+}

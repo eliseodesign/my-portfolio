@@ -19,17 +19,20 @@ function App() {
       {/* <section className={dark ? "dark" : "light"}> */}
       <BrowserRouter>
         <Top />
-        <Page />
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/about-me" element={<AboutMe />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="*" element={<Err404 />} />
-        </Routes>
+        <section className="container-main">
+          <Page />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/about-me" element={<AboutMe />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="*" element={<Err404 />} />
+          </Routes>
+        </section>
+        <div className="vacio"></div>
       </BrowserRouter>
-      <Bottom />
+      {/* <Bottom /> */}
       {/* </section> */}
     </Data>
   );

@@ -1,5 +1,21 @@
 @import url("./var.css");
 
+.top{
+  width: 100%;
+  margin-top: .5em;
+  display: flex;
+  align-items:center;
+  justify-content:space-between;
+
+}
+.svg-container{
+  padding: .5em;
+  cursor: pointer;
+}
 html[data-theme="dark"] svg{
   fill: #81C2FF;
+}
+
+svg{
+  fill: #2D2D2D;
 }

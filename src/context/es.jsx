@@ -6,7 +6,7 @@ const es = [
     profile: "Frontend developer",
     gmail: "eliseoarevalo20@gmail.com",
     number: 74629868,
-    greating: "Bienvenido a mi portafolio web... ¿A dondé quieres ir?",
+    greating: "Bienvenido a mi portafolio web... ¿Ahora a dondé quieres ir?",
     buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />"],
   },
   {
