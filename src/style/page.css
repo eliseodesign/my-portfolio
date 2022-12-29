@@ -1,65 +1,89 @@
 @import url(../style/var.css);
+/* link back home  */
+/* page  */
+/* media queries  */
+.toHome{
+  display: flex;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: 600;
+  opacity: .5;
+  letter-spacing: 1.2px;
+  transition:opacity .2s;
+}
+.toHome:hover{
+  opacity: .9;
+}
+/* todo svg baackIcon */
+html[data-theme="dark"] .back{
+  fill: var(--text-color)
+}
+.back{
+  margin-right: .5em;
+  fill:var(--text-color)
+}
+
+/* todo  */
 .page{
-  margin-top:-30px;
+  --time:.28s;
   width: 100%;
+  min-width: 250px;
+  margin-top: -50px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:flex-start;
+  position: relative;
 }
-
 .page__photo{
+  width: 170px;
+  height: 170px;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   align-items: center;
-
-  width: 150px;
-  height: 150px;
-  margin: auto;
   background: var(--primary);
-  /* border-radius: 50%; */
   clip-path: circle(50% at 50% 50%);
   overflow: hidden;
-  /* :solid 12px var(--primary); */
   z-index: 1 ;
+  transition: transform var(--time);
+  
 }
-
-.circulo{
-  overflow: hidden;
-  clip-path: circle(50% at 50% 50%);
-  background: var(--text-color);
-  width: 85%;
+.photo__circulo{
   height: 85%;
+  width: 85%;
+  background: var(--text-color);
   display: flex;
   align-items:flex-end;
   justify-content:center;
-}
+  clip-path: circle(50% at 50% 50%);
+  transition: transform var(--time);
 
+}
 .photo__img{
-  
   width: 90%;
   height: 90%;
-  transform: rotate(-10deg);
+  transform: rotate(-12deg);
+  transition: all .1s;
+
 }
 
-
-
 .page__info{
+  width: 100%;
+  margin-top: -85px;
   padding-top: 120px;
   padding-bottom: 20px;
-  margin-top: -80px;
-  width: 100%;
 
   background: var(--text-color);
   color: var(--primary);
   border-radius: 1em;
   text-align: center;
+  transition: transform var(--time);
   
 }
 
 .page__info h1{
-  font-size: 1.5em;
+  font-size: 2em;
+  margin: 0em 0em .5em; 
 }
 
 h2{
@@ -67,7 +91,70 @@ h2{
   color: var(--color);
 }
 html[data-theme="dark"] h2 {
-
   opacity: .4;
   color: var(--primary);
+}
+
+
+
+
+/* ! PAGE ACTIVE  */  
+/* ? cuando entramos a otra pagina  */
+
+.page-active{ 
+  width: 100%;
+  align-items:center;
+  margin-top: 0;
+  margin-bottom: -30px;
+}
+
+
+.page-active .page__photo{
+  --l:100px;
+  width: var(--l);
+  height: var(--l);
+  transform: translateX(-210%) translateY(0);
+}
+
+.page-active .page__info{
+  width: 100%;
+  margin-top: 0;
+  padding: 15px 15px 15px 15px;
+  transform: translateY(-135%);
+
+}
+.page-active .page__info h1{
+  font-size: 1.1em;
+}
+
+/* ? MEDIA QUERIES  */
+
+@media screen and (max-width:530px){
+  .toHome{
+    text-align: center;
+    justify-content: center;
+  }
+  .page-active{
+    transform: translateX(5%);
+
+  }
+  .page-active .page__photo{
+    transform: translateX(-150%);
+  }
+  .page-active .page__info{
+    width: 80%;
+  }
+}
+@media screen and (max-width:375px){
+  .page-active{
+    transform: translateX(10%);
+  }
+  .page-active .page__photo{
+    transform: translateX(-120%);
+  }
+  .page-active .page__info{
+    width: 70%;
+  }
+
+
 }

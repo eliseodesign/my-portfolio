@@ -9,6 +9,6 @@ html {
 html[data-theme="dark"] {
  
   --background: var(--primary);
-  --primary: #282c34;
+  --primary: #2D2D2D;
   --text-color: #D9D9D9;
 }

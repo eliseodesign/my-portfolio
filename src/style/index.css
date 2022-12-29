@@ -23,6 +23,10 @@ h3{
   background:var(--text-color);
 }
 
+.select a:hover{
+  transform: scale(1.03);
+}
+
 html[data-theme="dark"] .select a{
   color: var(--primary);
   background:var(--color);
