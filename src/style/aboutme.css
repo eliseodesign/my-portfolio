@@ -1,0 +1,85 @@
+@import url(./var.css);
+/* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css); */
+.description{
+  opacity: .8;
+  font-size: 1.1rem;
+}
+
+
+.description b{
+  font-weight: 600;
+}
+html[data-theme="dark"] .description b{
+  color: var(--color);
+}
+
+
+/* todo  */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+
+:root {
+  --marquee-width: 100%;
+  --marquee-height: 60px;
+  /* --marquee-elements: 12; defined with JavaScript */
+  --marquee-elements-displayed: 4;
+  --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+  --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+}
+
+/* @media screen and (max-width:720px){
+  :root{
+  --marquee-height: 30px;
+  }
+} */
+
+.marquee {
+  width: var(--marquee-width);
+  height: var(--marquee-height);
+  /* background-color: #111; */
+  color:var(--text-color);
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marquee-animation-duration) linear infinite;
+}
+
+@keyframes scrolling {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+}
+
+
+.marquee-content li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  flex-shrink: 0;
+  width: var(--marquee-element-width);
+  max-height: 100%;
+  font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+  white-space: nowrap;
+}
+
+html[data-theme="dark"] .marquee-content li {
+  color: var(--color);
+}
+ 
+
+
+@media (max-width: 600px) {
+  html { font-size: 12px; }
+  :root {
+    --marquee-width: 100%;
+    --marquee-height: 9vh;
+    --marquee-elements-displayed: 3;
+  }
+}

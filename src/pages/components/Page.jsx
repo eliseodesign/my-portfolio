@@ -33,7 +33,7 @@ function Page() {
       {active ? (
         <Link to={"/"} className="toHome">
           {" "}
-          <BackIcon /> Home{location}
+          <BackIcon /> <b>Home</b>{location}
         </Link>
       ) : (
         ""
@@ -52,7 +52,8 @@ function Page() {
               <h1>Eliseo Arévalo</h1>
               <h2>Frontend Developer</h2>
 
-              <p>eliseo.arev@gmail.com</p>
+           
+              <a href="mailto:eliseo.arev@gmail.com">eliseo.arev@gmail.com</a>
               <p>7462 9868</p>
             </>
           )}

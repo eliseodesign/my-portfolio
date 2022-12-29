@@ -1,4 +1,9 @@
 const AGE = new Date().getFullYear() - 2004;
+const Mydescription = () => {
+  return ( <p className="description">My name is <b> Eliseo </b> Arévalo, I'm <b>{AGE}</b> year old. A <b>frontend</b> developer and programer, studen of <b>software</b> development in the ESFE                                                                                                                                       
+  </p> );
+}
+ 
 const en = [
   {
     title: "index",
@@ -11,9 +16,13 @@ const en = [
   },
   {
     title: "About me",
-    description: `My name is Eliseo Arévalo, I'm ${AGE} year old. A frontend developer, studen of software development in the ESFE`,
-    h2: "My tecnologies",
+    description: <Mydescription/>,
+    myTec:"My web tecnologíes"
   },
 ];
 
 export default en;
+
+
+
+

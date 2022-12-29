@@ -5,6 +5,9 @@
   box-sizing: border-box;
   user-select: none;
 }
+p{
+  user-select:text;
+}
 :root {
   font-size: 16px;
   line-height: 24px;
@@ -43,6 +46,7 @@ div, section, article, a, p{
 
 
 .container-main{
+  /* display: flex; */
   width: 100%;
   margin: 0 auto;
   max-width: 500px;

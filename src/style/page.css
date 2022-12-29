@@ -6,13 +6,17 @@
   display: flex;
   color: var(--text-color);
   text-align: center;
-  font-weight: 600;
-  opacity: .5;
-  letter-spacing: 1.2px;
+  opacity: .8;
+  letter-spacing: 1.1px;
   transition:opacity .2s;
 }
 .toHome:hover{
   opacity: .9;
+}
+.toHome:hover > .back,
+.toHome:hover > b{
+  color: var(--color);
+  fill: var(--color);
 }
 /* todo svg baackIcon */
 html[data-theme="dark"] .back{
@@ -79,6 +83,10 @@ html[data-theme="dark"] .back{
   text-align: center;
   transition: transform var(--time);
   
+}
+.page__info a{
+  
+  color: var(--primary);
 }
 
 .page__info h1{
