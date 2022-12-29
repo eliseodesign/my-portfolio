@@ -2,20 +2,25 @@
 
 .top{
   width: 100%;
+  height: 60px;
   margin-top: .5em;
   display: flex;
   align-items:center;
   justify-content:space-between;
+ 
 
 }
 .svg-container{
   padding: .5em;
   cursor: pointer;
+  z-index: 1;
 }
 html[data-theme="dark"] svg{
-  fill: #81C2FF;
+  fill: var(--color);
 }
 
 svg{
-  fill: #2D2D2D;
+  fill:var(--text-color)
+
 }
+

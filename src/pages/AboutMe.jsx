@@ -21,8 +21,10 @@ function AboutMe() {
   const { dataLanguage } = useContext(Contexto);
 
   return <div>
-    <div>
+    <div className="info-im">
+      <img src="../../public/im.jfif" alt="" />
       {dataLanguage[1].description}
+
     </div>
 
     <div className="slider">

@@ -13,6 +13,14 @@ import Blog from "./pages/Blog";
 import Err404 from "./pages/Err404";
 
 function App() {
+  const gato = [
+    " ._       __         ____",
+    ";  `\--,-' /`)    _.-'    `-._",
+    "/\ _/    ' | /`--,'            `-.     .--....____",
+    "  /                              `._.'           `---..."
+  ]
+
+  gato.forEach((pieza)=> console.log(pieza))
   return (
     // data es el provider
     <Data>

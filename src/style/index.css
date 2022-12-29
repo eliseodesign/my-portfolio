@@ -12,17 +12,23 @@ h3{
 }
 
 .select a{
-  
   font-weight: 600;
-  text-align: center;
   font-size: 1.1em;
   color: var(--color);
   width: 100%;
   padding:1.5em 1em;
   border-radius: .7em;
   background:var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
+@media screen and (max-width:720px){
+  .select a{
+    height: 100px;
+  }
+}
 .select a:hover{
   transform: scale(1.03);
 }

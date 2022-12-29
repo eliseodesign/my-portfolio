@@ -1,8 +1,20 @@
 @import url(./var.css);
 /* @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css); */
+
+/* .info-im{
+  display: flex;
+} */
+.info-im img{
+  width: 150px;
+  float: right;
+  border-radius: .5em;
+  margin-left: 1em;
+  margin-bottom: .5em;
+}
 .description{
   opacity: .8;
   font-size: 1.1rem;
+  text-align: justify;
 }
 
 
