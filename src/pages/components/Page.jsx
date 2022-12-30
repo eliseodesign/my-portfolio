@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Contexto } from "../../context/Contexto";
+import foto from "../../img/foto.png"
 
 import "../../style/page.css";
 
@@ -41,7 +42,7 @@ function Page() {
       <div className={active ? "page page-active" : "page"}>
         <div className="page__photo">
           <div className="photo__circulo">
-            <img src="../../public/foto.png" alt="" className="photo__img" />
+            <img src={foto} alt="" className="photo__img" />
           </div>
         </div>
         <div className="page__info">
