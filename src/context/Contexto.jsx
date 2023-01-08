@@ -9,7 +9,7 @@ export const Data = ({ children }) => {
     localStorage.getItem("language") === "es" ? "es" : "en"
   );
   const [dark, setDark] = useState(
-    localStorage.getItem("theme") === "light" ? false : true
+    localStorage.getItem("theme") === "dark" ? true : false
   );
 
   const dataLanguage = language === "en" ? en : es;

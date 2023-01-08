@@ -13,6 +13,7 @@ function Index() {
         <Link to={"/projects"}>{dataLanguage[0].buttons[1]}</Link>
         <Link to={"/contact"}>{dataLanguage[0].buttons[2]}</Link>
         <Link to={"/blog"}>{dataLanguage[0].buttons[3]}</Link>
+        {/* <Link to={"/blog"}>{dataLanguage[0].buttons[4]}</Link> */}
         {/* {dataLanguage[0].buttons.map((btn, id) => (
           <Link key={id}>
             {btn} to={}

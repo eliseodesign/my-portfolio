@@ -51,7 +51,7 @@ function Page() {
           ) : (
             <>
               <h1>Eliseo Arévalo</h1>
-              <h2>Frontend Developer</h2>
+              <h2>{dataLanguage[0].profile}</h2>
 
            
               <a href="mailto:eliseo.arev@gmail.com">eliseo.arev@gmail.com</a>

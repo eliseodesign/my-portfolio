@@ -24,3 +24,55 @@ svg{
 
 }
 
+
+
+.tooltip .tiptext{
+  display: none;
+}
+
+
+@media (hover:hover){
+  /*  Tol tip  */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+.tooltip .tiptext {
+  /* opacity: .4; */
+  display: block;
+  visibility: hidden;
+  width: 120px;
+  background-color:var(--text-color); 
+  color:var(--primary);
+  text-align: center;
+  border-radius: 10px;
+  padding: 6px 0;
+  position: absolute;
+  z-index: 1;
+}
+.tooltip .tiptext::after {
+  content: "";
+  position: absolute;
+  border-width: 5px;
+  border-style: solid;
+}
+.tooltip:hover .tiptext {
+  visibility: visible;
+}
+
+  .tooltip.left .tiptext{
+    top: 10%;
+    right: 110%;
+  }
+  .tooltip.left .tiptext::after{
+    margin-top: -5px;
+    top: 50%;
+    left: 100%;
+    border-color: transparent transparent transparent #2E2E2E;
+  }
+}
+
+
+
+
+

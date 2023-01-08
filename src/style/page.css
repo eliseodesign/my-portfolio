@@ -7,7 +7,6 @@
   color: var(--text-color);
   text-align: center;
   opacity: .8;
-  letter-spacing: 1.1px;
   transition:opacity .2s;
   margin-top: -20px;
 }

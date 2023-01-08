@@ -36,7 +36,7 @@
 *::-webkit-scrollbar-track {
   border-radius: 1px;  
 }
-p{
+p, b{
   user-select:text;
 }
 :root {

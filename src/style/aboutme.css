@@ -13,9 +13,15 @@
 .description{
   opacity: .8;
   font-size: 1.1rem;
-  text-align: justify;
+  text-align: left;
 }
 
+.description span{
+  font-size: 1.7rem;
+  text-align: right;
+  display: block;
+  margin-bottom: 1em;
+}
 
 .description b{
   font-weight: 600;
@@ -44,6 +50,10 @@ html[data-theme="dark"] .description b{
   --marquee-height: 30px;
   }
 } */
+
+.slider{
+  margin-top: 3em;
+}
 
 .marquee {
   width: var(--marquee-width);
