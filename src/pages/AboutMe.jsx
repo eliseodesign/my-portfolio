@@ -2,7 +2,7 @@ import { useContext, useEffect } from "react";
 import { Contexto } from "../context/Contexto";
 import "../style/aboutme.css"
 import { FaCss3Alt, FaHtml5, FaJsSquare, FaNode, FaReact, FaSass } from "react-icons/fa";
-
+import foto from "../img/im.jfif"
 
 function AboutMe() {
 
@@ -22,7 +22,7 @@ function AboutMe() {
 
   return <div>
     <div className="info-im">
-      <img src="../../public/im.jfif" alt="" />
+      <img src={foto} alt="" />
       {dataLanguage[1].description}
 
     </div>

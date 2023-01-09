@@ -30,7 +30,9 @@ const en = [
     description: <Mydescription/>,
     myTec:"My web tecnologíes"
   },
-  {},
+  {
+    button2:"View"
+  },
   {
     description:"This site is in contruction but you can visit my repository of my notes"
   }

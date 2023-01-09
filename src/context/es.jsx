@@ -23,7 +23,9 @@ const es = [
     description:<Mydescription />,
     myTec:"Tecnologías web que uso"
   },
-  {},
+  {
+    button2:"Ver"
+  },
   {
     description:"Esta página no esta terminada pero puedes visitar el repositorio con mis notas"
   }
