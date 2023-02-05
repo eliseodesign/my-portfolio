@@ -1,8 +1,8 @@
 import { useContext, useEffect } from "react";
-import { Contexto } from "../context/Contexto";
-import "../style/aboutme.css"
+import { Contexto } from "@/shared/utils/context/Contexto";
+import "@/style/aboutme.css"
 import { FaCss3Alt, FaHtml5, FaJsSquare, FaNode, FaReact, FaSass } from "react-icons/fa";
-import foto from "../img/im.jfif"
+import foto from "@/shared/assets/img/im.jfif"
 
 function AboutMe() {
 

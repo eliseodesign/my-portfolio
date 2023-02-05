@@ -1,10 +1,10 @@
 import { useContext } from "react";
-import { Contexto } from "../context/Contexto";
-import { projects } from "../context/projects";
+import { Contexto } from "@/shared/utils/context/Contexto";
+import { projects } from "@/shared/utils/context/projects";
 import { FaGithub } from "react-icons/fa";
 import { BiWindowOpen } from "react-icons/bi";
 
-import "../style/projects.css";
+import "@/style/projects.css";
 
 function Projects() {
   const { dataLanguage } = useContext(Contexto);

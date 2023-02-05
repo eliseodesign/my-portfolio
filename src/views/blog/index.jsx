@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import {Contexto} from "../context/Contexto"
+import {Contexto} from "@/shared/utils/context/Contexto"
 
 function Blog() {
   const {dataLanguage} = useContext(Contexto)

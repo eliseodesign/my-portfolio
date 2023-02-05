@@ -1,7 +1,7 @@
 import { useContext, useEffect } from "react";
-import { Contexto } from "../../context/Contexto";
+import { Contexto } from "@/shared/utils/context/Contexto";
 
-import "../../style/top.css";
+import "@/style/top.css";
 const Top = () => {
   //////////////////////////////////////////////
   const { dark, setDark, language, setLanguage } = useContext(Contexto);
@@ -27,10 +27,6 @@ const Top = () => {
       localStorage.setItem("theme", "dark");
       setDark(true);
     } 
-    // else {
-    //   localStorage.setItem("theme", "dark");
-    //   setDark(true);
-    // }
   }
 
   function changeLanguage() {

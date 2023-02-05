@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
-import { Contexto } from "../context/Contexto";
-import "../style/index.css";
+import { Contexto } from "@/shared/utils/context/Contexto";
+import "@/style/index.css";
 function Index() {
   const { dataLanguage } = useContext(Contexto);
   return (
