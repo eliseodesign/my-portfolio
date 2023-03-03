@@ -62,7 +62,6 @@ function Page() {
       </div>
     </>
   );
-  // return <div>{location}</div>;
 }
 
 const BackIcon = () => {

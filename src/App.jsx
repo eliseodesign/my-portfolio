@@ -1,6 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
-// components
-import Top from "./pages/components/Top";
+import Top from "@/shared/components/Top";
 import CardIm from "@/shared/components/CardIm"
 import Routing from "./views/Routing";
 
@@ -13,10 +11,6 @@ function App() {
           <CardIm />
           <Routing />
         </section>
-        <div className="vacio"></div>
-    
-      {/* <Bottom /> */}
-      {/* </section> */}
     </>
   );
 }

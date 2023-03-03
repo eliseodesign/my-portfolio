@@ -4,7 +4,7 @@ import AboutMe from "./about"
 import Projects from "./projects"
 import Contact from "./contact"
 import Blog from "./blog"
-import NotFount from './NotFount'
+import NotFount from './NotFount.jsx'
 
 const Routing = () => {
   return ( 
