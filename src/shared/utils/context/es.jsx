@@ -8,8 +8,47 @@ const Mydescription = () => {
   </p> );
 }
  
-const es = [
-  {
+// const es = [
+//   { // 0
+//     // index
+//     title: "index",
+//     name: "Eliseo Arévalo",
+//     profile: "Desarrollador Frontend",
+//     gmail: "eliseoarevalo20@gmail.com",
+//     number: 74629868,
+//     greating: "Bienvenido a mi web... ¿Ahora a dondé quieres ir?",
+//     buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />", "Servicios"],
+//   },
+//   { // 1 
+//     // about me
+//     title: "Sobre mí",
+//     description:<Mydescription />,
+//     myTec:"Tecnologías web que uso"
+//   },
+//   {
+//     // projects
+//   },
+//   {
+//     // contacto
+//     form:{
+//       name:"Tus nombres",
+//       lastName:"Tus Apellidos",
+//       affair:"Asunto"
+//     }
+//   },
+//   {
+//     button2:"Ver"
+//   },
+//   {
+//     description:"Esta página no esta terminada pero puedes visitar el repositorio con mis notas"
+//   }
+// ];
+
+
+const es = 
+{
+  home:{ // 0
+    // index
     title: "index",
     name: "Eliseo Arévalo",
     profile: "Desarrollador Frontend",
@@ -18,16 +57,26 @@ const es = [
     greating: "Bienvenido a mi web... ¿Ahora a dondé quieres ir?",
     buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />", "Servicios"],
   },
-  {
+  aboutMe:{ // 1 
+    // about me
     title: "Sobre mí",
     description:<Mydescription />,
     myTec:"Tecnologías web que uso"
   },
-  {
-    button2:"Ver"
+  projects:{
+    // projects
   },
-  {
+  contact:{
+    // contacto
+    form:{
+      name:"Tus nombres",
+      lastName:"Tus Apellidos",
+      affair:"Asunto"
+    }
+  },
+  blog:{
     description:"Esta página no esta terminada pero puedes visitar el repositorio con mis notas"
   }
-];
+};
+
 export default es;

@@ -15,8 +15,44 @@ const Mydescription = () => {
  );
 }
  
-const en = [
-  {
+// const en = [
+//   {
+//     title: "index",
+//     name: "Eliseo Arévalo",
+//     profile: "Frontend Developer",
+//     gmail: "eliseoarevalo20@gmail.com",
+//     number: 74629868,
+//     greating: "Welcome to my web... where do you want to go?",
+//     buttons: ["About me", "Projects", "Contact", "<Blog />", "Services"],
+//   },
+//   {
+//     title: "About me",
+//     description: <Mydescription/>,
+//     myTec:"My web tecnologíes"
+//   },
+//   {
+//     // projects
+//   },
+//   {
+//     // contacto
+//     form:{
+//       name:"Name",
+//       lastName:"Last Name",
+//       affair:"Affair"
+//     }
+//   },
+//   {
+//     button2:"View"
+//   },
+//   {
+//     description:"This site is in contruction but you can visit my repository of my notes"
+//   }
+// ];
+
+
+const en = 
+{
+  home:{
     title: "index",
     name: "Eliseo Arévalo",
     profile: "Frontend Developer",
@@ -25,18 +61,27 @@ const en = [
     greating: "Welcome to my web... where do you want to go?",
     buttons: ["About me", "Projects", "Contact", "<Blog />", "Services"],
   },
-  {
+  aboutMe:{
     title: "About me",
     description: <Mydescription/>,
     myTec:"My web tecnologíes"
   },
-  {
-    button2:"View"
+  projects:{
+    // projects
   },
-  {
+  contact:{
+    // contacto
+    form:{
+      name:"Name",
+      lastName:"Last Name",
+      affair:"Affair"
+    }
+  },
+
+  blog:{
     description:"This site is in contruction but you can visit my repository of my notes"
   }
-];
+};
 
 export default en;
 
