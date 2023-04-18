@@ -7,11 +7,13 @@ import "@/style/aboutme.css"
 function AboutMe() {
   const { dataLanguage } = useContext(Contexto);
 
+  const { aboutMe } = dataLanguage
+
   return (
     <div>
       <div className="info-im">
         <img src={foto} alt="" />
-        {dataLanguage[1].description}
+        {aboutMe.description}
       </div>
       <Slider />
     

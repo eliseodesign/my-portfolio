@@ -22,7 +22,7 @@ const Slider = () => {
 
   return ( 
     <div className="slider">
-      <h3>{dataLanguage[1].myTec}</h3>
+      <h3>{dataLanguage.aboutMe.myTec}</h3>
       <div className="marquee">
         <ul className="marquee-content">
           <li> <FaHtml5 /> </li>

@@ -4,15 +4,16 @@ import { Contexto } from "@/shared/utils/context/Contexto";
 import "@/style/index.css";
 function Index() {
   const { dataLanguage } = useContext(Contexto);
+  const {home} = dataLanguage
   return (
     <div>
-      <h3>{dataLanguage[0].greating}</h3>
+      <h3>{home.greating}</h3>
 
       <div className="select">
-        <Link to={"/about-me"}>{dataLanguage[0].buttons[0]}</Link>
-        <Link to={"/projects"}>{dataLanguage[0].buttons[1]}</Link>
-        <Link to={"/contact"}>{dataLanguage[0].buttons[2]}</Link>
-        <Link to={"/blog"}>{dataLanguage[0].buttons[3]}</Link>
+        <Link to={"/about-me"}>{home.buttons[0]}</Link>
+        <Link to={"/projects"}>{home.buttons[1]}</Link>
+        <Link to={"/contact"}>{home.buttons[2]}</Link>
+        <Link to={"/blog"}>{home.buttons[3]}</Link>
     
       </div>
     </div>
