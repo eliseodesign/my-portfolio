@@ -7,48 +7,11 @@ const Mydescription = () => {
     En la creación de aplicaciones de <b>JavaScript</b>, domino las herramientas adecuadas y puedo funcionar absolutamente independientemente de ellas para ofrecer soluciones rápidas y resistentes optimizadas: el <b>rendimiento</b> y la <b>escalabilidad</b> son prioridades 
   </p> );
 }
- 
-// const es = [
-//   { // 0
-//     // index
-//     title: "index",
-//     name: "Eliseo Arévalo",
-//     profile: "Desarrollador Frontend",
-//     gmail: "eliseoarevalo20@gmail.com",
-//     number: 74629868,
-//     greating: "Bienvenido a mi web... ¿Ahora a dondé quieres ir?",
-//     buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />", "Servicios"],
-//   },
-//   { // 1 
-//     // about me
-//     title: "Sobre mí",
-//     description:<Mydescription />,
-//     myTec:"Tecnologías web que uso"
-//   },
-//   {
-//     // projects
-//   },
-//   {
-//     // contacto
-//     form:{
-//       name:"Tus nombres",
-//       lastName:"Tus Apellidos",
-//       affair:"Asunto"
-//     }
-//   },
-//   {
-//     button2:"Ver"
-//   },
-//   {
-//     description:"Esta página no esta terminada pero puedes visitar el repositorio con mis notas"
-//   }
-// ];
 
 
 const es = 
 {
-  home:{ // 0
-    // index
+  home:{ 
     title: "index",
     name: "Eliseo Arévalo",
     profile: "Desarrollador Frontend",
@@ -57,17 +20,14 @@ const es =
     greating: "Bienvenido a mi web... ¿Ahora a dondé quieres ir?",
     buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />", "Servicios"],
   },
-  aboutMe:{ // 1 
-    // about me
+  aboutMe:{ 
     title: "Sobre mí",
     description:<Mydescription />,
     myTec:"Tecnologías web que uso"
   },
   projects:{
-    // projects
   },
   contact:{
-    // contacto
     form:{
       name:"Tus nombres",
       lastName:"Tus Apellidos",

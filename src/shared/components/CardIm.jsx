@@ -12,6 +12,7 @@ function CardIm() {
   if (location.length > 1) active = true; // si esta en una pagina diferente a / sera true
 
   const { dataLanguage } = useContext(Contexto);
+  const {home} = dataLanguage
 
   let iPage; // le asignamos un indice para buscar en dataLanguage
   switch (location) {
@@ -47,11 +48,11 @@ function CardIm() {
         </div>
         <div className="page__info">
           {active ? (
-            <h1>{dataLanguage[0].buttons[iPage]}</h1>
+            <h1>{home.buttons[iPage]}</h1>
           ) : (
             <>
               <h1>Eliseo Arévalo</h1>
-              <h2>{dataLanguage[0].profile}</h2>
+              <h2>{home.profile}</h2>
 
            
               <a href="mailto:eliseo.arev@gmail.com">eliseo.arev@gmail.com</a>
