@@ -11,7 +11,8 @@
 
 }
 .svg-container{
-  padding: .5em;
+  display: grid;
+  place-items: center;
   cursor: pointer;
   z-index: 1;
 }
