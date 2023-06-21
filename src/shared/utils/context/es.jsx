@@ -3,8 +3,10 @@ const Mydescription = () => {
   return ( 
   <p className="description">
     <span>Hola 👋🏼</span>
-    Mi nombre es <b>Eliseo</b> Francisco Arévalo tengo <b>{AGE}</b> años de edad. Soy programador, también desarrollador web <b>frontend</b>, estudiante de la carrera de desarrollo de <b>software</b> en ESFE <br /> <br /> 
-    En la creación de aplicaciones de <b>JavaScript</b>, domino las herramientas adecuadas y puedo funcionar absolutamente independientemente de ellas para ofrecer soluciones rápidas y resistentes optimizadas: el <b>rendimiento</b> y la <b>escalabilidad</b> son prioridades 
+    Mi nombre es <b>Eliseo</b> Arévalo tengo <b>{AGE}</b> años. Fullstack developer <b>Javascript</b>, también  <b>.Net</b> developer, estudiante de <b>software</b> en <a href="https://www.esfe.agape.edu.sv/">ESFE</a><br /> <br /> 
+
+    Puedo crear aplicaciones <b>JavaScript</b> Fullstack, domino las herramientas adecuadas y puedo funcionar absolutamente independientemente de ellas. En cada desarrollo el <b>rendimiento</b> y la <b>escalabilidad</b> son prioridades 
+    <span></span>
   </p> );
 }
 
@@ -23,7 +25,7 @@ const es =
   aboutMe:{ 
     title: "Sobre mí",
     description:<Mydescription />,
-    myTec:"Tecnologías web que uso"
+    myTec:"¿Qué puedo hacer?"
   },
   projects:{
   },

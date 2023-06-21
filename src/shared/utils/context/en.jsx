@@ -4,10 +4,9 @@ const Mydescription = () => {
   <p className="description">
     <span>Hello 👋🏼</span>
 
-    My name is <b> Eliseo </b> Arévalo, I'm <b>{AGE}</b> years old. A <b>frontend</b> developer and programer, student of <b>software</b> development in the ESFE <br /> <br />
+    My name <b> Eliseo </b> Arévalo, I'm <b>{AGE}</b>. A <b>JavaScript</b> fullstack dev and <b>.Net</b> dev, <b>software</b> development student in <a href="https://www.esfe.agape.edu.sv/">ESFE</a> <br /> <br />
 
-     In building <b>JavaScript</b> applications
-     , I'm equipped with just the right tools, and can absolutely function independently of them to deliver fast, resilient solutions optimized for scale — <b>performance</b> and <b>scalabilty</b> are priorities
+    When it comes to building <b>JavaScript</b> applications, I have the necessary tools and expertise to work efficiently. I am capable of delivering high-performance and scalable solutions independently. Prioritizing <b>performance</b> and <b>scalability</b> is always a key focus in my development process.
     <span></span>
     
  </p> 
@@ -29,7 +28,7 @@ const en =
   aboutMe:{
     title: "About me",
     description: <Mydescription/>,
-    myTec:"My web tecnologíes"
+    myTec:"What I do?"
   },
   projects:{
   },
