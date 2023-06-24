@@ -3,7 +3,7 @@
 .top{
   top: 0;
   left: 0;
-  padding: 0 20px;
+  padding: 0 5vw;
   position: fixed;
   z-index: 50;
   width: 100%;
@@ -11,6 +11,7 @@
   display: flex;
   align-items:center;
   justify-content:space-between;
+  background: var(--primary);
 }
 
 .svg-container{
@@ -71,4 +72,24 @@ svg{
     left: 100%;
     border-color: transparent transparent transparent #2E2E2E;
   }
+}
+
+
+.toHome{
+  display: flex;
+  color: var(--text-color);
+  text-align: center;
+  opacity: .8;
+  transition:opacity .2s;
+  margin-top: 0px;
+  letter-spacing: 2px;
+}
+.toHome:hover{
+  opacity: .9;
+}
+
+.toHome:hover > .back,
+.toHome:hover > b{
+  color: var(--color);
+  fill: var(--color);
 }

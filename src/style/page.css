@@ -2,22 +2,6 @@
 /* link back home  */
 /* page  */
 /* media queries  */
-.toHome{
-  display: flex;
-  color: var(--text-color);
-  text-align: center;
-  opacity: .8;
-  transition:opacity .2s;
-  margin-top: 0px;
-}
-.toHome:hover{
-  opacity: .9;
-}
-.toHome:hover > .back,
-.toHome:hover > b{
-  color: var(--color);
-  fill: var(--color);
-}
 /* todo svg baackIcon */
 html[data-theme="dark"] .back{
   fill: var(--text-color)
@@ -38,7 +22,6 @@ html[data-theme="dark"] .back{
   align-items: center;
   justify-content:flex-start;
   position: relative;
-  margin-top: 0px;
 
 }
 .page__photo{
@@ -50,7 +33,7 @@ html[data-theme="dark"] .back{
   background: var(--primary);
   clip-path: circle(50% at 50% 50%);
   overflow: hidden;
-  z-index: 1 ;
+  z-index:50;
   transition: transform var(--time);
   
 }
@@ -113,7 +96,7 @@ html[data-theme="dark"] h2 {
   width: 100%;
   height: min-content;
   align-items:center;
-  margin-top: 40px;
+  margin-top: 60px;
   margin-bottom: -40px;
 }
 
@@ -123,6 +106,7 @@ html[data-theme="dark"] h2 {
   height: var(--l);
   transform: translateX(-210%) translateY(0);
   margin: 0;
+  z-index: 1;
 }
 
 .page-active .page__info{

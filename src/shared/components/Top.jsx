@@ -66,7 +66,7 @@ const Top = () => {
           <BackIcon /> <b>Home</b>{location}
         </Link>
       ) : (
-        ""
+        null
       )}
 
       <div className="svg-container tooltip left" onClick={changeLanguage}>

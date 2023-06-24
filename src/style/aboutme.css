@@ -1,5 +1,7 @@
 @import url(./var.css);
-
+.about-me{
+  opacity: .7;
+}
 .info-im img{
   width: 30%;
   min-width: 150px;
@@ -9,7 +11,6 @@
   margin-bottom: 10px;
 }
 .description{
-  opacity: .8;
   font-size: 1.1rem;
   text-align: left;
   line-height:1.5;
@@ -37,7 +38,6 @@ html[data-theme="dark"] .description a{
 
 .about-title{
   font-size: 1.5rem;
-  opacity: .8;
   padding-top: 1em;
   text-align: center;
 }
