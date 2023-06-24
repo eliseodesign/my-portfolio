@@ -1,15 +1,18 @@
 @import url("./var.css");
 
 .top{
+  top: 0;
+  left: 0;
+  padding: 0 20px;
+  position: fixed;
+  z-index: 50;
   width: 100%;
   height: 60px;
-  margin-top: .5em;
   display: flex;
   align-items:center;
   justify-content:space-between;
- 
-
 }
+
 .svg-container{
   display: grid;
   place-items: center;
@@ -22,10 +25,7 @@ html[data-theme="dark"] svg{
 
 svg{
   fill:var(--text-color)
-
 }
-
-
 
 .tooltip .tiptext{
   display: none;
@@ -72,8 +72,3 @@ svg{
     border-color: transparent transparent transparent #2E2E2E;
   }
 }
-
-
-
-
-

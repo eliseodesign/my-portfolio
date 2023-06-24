@@ -2,9 +2,14 @@ import { useContext, useEffect } from "react";
 import { Contexto } from "@/shared/utils/context/Contexto";
 import { DarkModeSwitch } from "react-toggle-dark-mode";
 import { defaultProperties } from './configToggle'
+import { Link, useLocation } from "react-router-dom";
 import "@/style/top.css";
 
 const Top = () => {
+  let location = useLocation().pathname;
+  let active;
+  if (location.length > 1) active = true; // si esta en una pagina diferente a / sera true
+
   //////////////////////////////////////////////
   const { dark, setDark, language, setLanguage } = useContext(Contexto);
 
@@ -55,6 +60,15 @@ const Top = () => {
       
       </div>
 
+      {active ? (
+        <Link to={"/"} className="toHome">
+          {" "}
+          <BackIcon /> <b>Home</b>{location}
+        </Link>
+      ) : (
+        ""
+      )}
+
       <div className="svg-container tooltip left" onClick={changeLanguage}>
         <p className="tiptext">{language==="es"?"English":"Español"}</p>
         <svg width={31} height={31} xmlns="http://www.w3.org/2000/svg">
@@ -73,3 +87,19 @@ const Top = () => {
 };
 
 export default Top;
+
+const BackIcon = () => {
+  return (
+    <svg
+    className="back"
+    xmlns="http://www.w3.org/2000/svg"
+    width={24}
+    height={24}
+ 
+
+  >
+    <path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" />
+    <path d="M13.293 6.293 7.586 12l5.707 5.707 1.414-1.414L10.414 12l4.293-4.293z" />
+  </svg>
+  );
+};

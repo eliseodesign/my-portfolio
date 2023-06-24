@@ -8,7 +8,7 @@
   text-align: center;
   opacity: .8;
   transition:opacity .2s;
-  margin-top: -20px;
+  margin-top: 0px;
 }
 .toHome:hover{
   opacity: .9;
@@ -32,13 +32,13 @@ html[data-theme="dark"] .back{
   --time:.28s;
   width: 100%;
   min-width: 250px;
-  margin-top: -50px;
+  margin-top: 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content:flex-start;
   position: relative;
-  margin-top: -60px;
+  margin-top: 0px;
 
 }
 .page__photo{
@@ -106,8 +106,6 @@ html[data-theme="dark"] h2 {
 }
 
 
-
-
 /* ! PAGE ACTIVE  */  
 /* ? cuando entramos a otra pagina  */
 
@@ -115,10 +113,9 @@ html[data-theme="dark"] h2 {
   width: 100%;
   height: min-content;
   align-items:center;
-  margin-top: 0px;
+  margin-top: 40px;
   margin-bottom: -40px;
 }
-
 
 .page-active .page__photo{
   --l:100px;
@@ -133,7 +130,7 @@ html[data-theme="dark"] h2 {
   width: 100%;
   height: 70px;
   margin:0;
-  margin-top: 0;
+  margin-top:2px;
   padding: 0;
   transform: translateY(-125%);
 

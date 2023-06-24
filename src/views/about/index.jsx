@@ -13,16 +13,15 @@ function AboutMe() {
 
   const { aboutMe } = dataLanguage
 
-  const backend = [ ]
   return (
     <div className="about-me">
       <div className="info-im">
-        <img src="/foto.png" alt="" />
+        <img src="/im.jfif" alt="" />
         
         {aboutMe.description}
       </div>
       
-      <h1>{dataLanguage.aboutMe.myTec}</h1>
+      <p className="about-title">{dataLanguage.aboutMe.myTec} 🤔</p>
       <h3>Web</h3>
 
       <Slider of="backend">

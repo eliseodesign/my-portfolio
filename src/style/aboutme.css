@@ -1,38 +1,32 @@
 @import url(./var.css);
 
-/* .info-im{
-  display: flex;
-} */
-.about-me h1{
-  font-size: 1.7em;
-  color: #5294d1;
-  font-weight: 500;
-  opacity: .8;
-}
 .info-im img{
-  width: 150px;
+  width: 30%;
+  min-width: 150px;
   float: right;
-  border-radius: .5em;
-  margin-left: 1em;
-  margin-bottom: .5em;
+  border-radius: .3em;
+  margin-left: 10px;
+  margin-bottom: 10px;
 }
 .description{
   opacity: .8;
   font-size: 1.1rem;
   text-align: left;
+  line-height:1.5;
 }
 
 .description span{
   font-size: 1.7rem;
   text-align: right;
   display: block;
-  margin-bottom: 1em;
+  margin-bottom: 10px;
 }
 
 .description b, .description a{ 
   font-weight: 600;
   color: var(--text-color);
 }
+
 .description a{
   text-decoration: underline;
 }
@@ -41,12 +35,14 @@ html[data-theme="dark"] .description a{
   color: var(--color);
 }
 
+.about-title{
+  font-size: 1.5rem;
+  opacity: .8;
+  padding-top: 1em;
+  text-align: center;
+}
 
 /* todo  */
-
-
-
-
 :root {
   --marquee-width: 100%;
   --marquee-height: 60px;
