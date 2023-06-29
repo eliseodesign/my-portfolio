@@ -1,10 +1,4 @@
-# MI PORTAFOLIO FRONTEND
+# Eliseo F. Arévalo
+## fullstack dev
 
-## EliseoDesign
-
-## Eliseo Arévalo
-
-Proyecto React - Vite
-
-La idea es crear un portafolio utilizando un contexto global que contenga los idiomas y el theme de la app
-tambien utilizar react-router para acceder a las distintas páginas
+Este es mi portfolio web donde te muestros mis proyectos frontend y backend, desktop y tal vez algun proyecto arduino
