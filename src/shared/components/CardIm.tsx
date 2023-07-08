@@ -8,7 +8,7 @@ function CardIm() {
   // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
   let pathname = usePathname();
   let active;
-  if (pathname !== '/') active = true; // si esta en una pagina diferente a / sera true
+  if (pathname === '/') active = true; // si esta en una pagina diferente a / sera true
 
   const { dataLanguage } = useContext(Contexto);
   const { home } = dataLanguage

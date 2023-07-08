@@ -1,5 +1,6 @@
+'use client'
 import { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import Link from 'next/link'
 import { Contexto } from '@/shared/utils/context/Contexto';
 import '@/style/index.css';
 function Index() {
@@ -10,10 +11,10 @@ function Index() {
       <h3>{home.greating}</h3>
 
       <div className="select">
-        <Link to={'/about-me'}>{home.buttons[0]}</Link>
-        <Link to={'/projects'}>{home.buttons[1]}</Link>
-        <Link to={'/contact'}>{home.buttons[2]}</Link>
-        <Link to={'/blog'}>{home.buttons[3]}</Link>
+        <Link href='/about-me'>{home.buttons[0]}</Link>
+        <Link href='/projects'>{home.buttons[1]}</Link>
+        <Link href='/contact'>{home.buttons[2]}</Link>
+        <Link href='/blog'>{home.buttons[3]}</Link>
     
       </div>
     </div>
