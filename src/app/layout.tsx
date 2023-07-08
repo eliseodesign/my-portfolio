@@ -1,3 +1,9 @@
+'use client'
+import Top from '@/shared/components/Top';
+import CardIm from '@/shared/components/CardIm'
+
+import { Data } from '@/shared/utils/context/Contexto';
+
 interface ReactNode {
   children: React.ReactNode
 }
@@ -8,7 +14,13 @@ export default function RootLayout({ children }: ReactNode) {
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <Data>
+          <Top />
+          <section className="container-main">
+            <CardIm />
+            {children}
+          </section>
+        </Data>
       </body>
     </html>
   )

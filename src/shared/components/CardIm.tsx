@@ -1,21 +1,20 @@
 import React, { useContext } from 'react';
-import {  useLocation } from 'react-router-dom';
+import {  usePathname } from 'next/navigation';
 import { Contexto } from '@/shared/utils/context/Contexto';
-import foto from '@/shared/assets/img/foto.png'
 
 import '@/style/page.css';
 
 function CardIm() {
   // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
-  let location = useLocation().pathname;
+  let pathname = usePathname();
   let active;
-  if (location.length > 1) active = true; // si esta en una pagina diferente a / sera true
+  if (pathname !== '/') active = true; // si esta en una pagina diferente a / sera true
 
   const { dataLanguage } = useContext(Contexto);
-  const {home} = dataLanguage
+  const { home } = dataLanguage
 
-  let iPage; // le asignamos un indice para buscar en dataLanguage
-  switch (location) {
+  let iPage = 0; // le asignamos un indice para buscar en dataLanguage
+  switch (pathname) {
     case '/about-me':
       iPage = 0;
       break;
@@ -35,7 +34,7 @@ function CardIm() {
       <div className={active ? 'page page-active' : 'page'}>
         <div className="page__photo">
           <div className="photo__circulo">
-            <img src={foto} alt="" className="photo__img" />
+            <img src="/foto.png" alt="" className="photo__img" />
           </div>
         </div>
         <div className="page__info">

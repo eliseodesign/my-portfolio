@@ -1,14 +1,16 @@
+/* eslint-disable max-len */
 import { useContext, useEffect } from 'react';
 import { Contexto } from '@/shared/utils/context/Contexto';
 import { DarkModeSwitch } from 'react-toggle-dark-mode';
 import { defaultProperties } from './configToggle'
-import { Link, useLocation } from 'react-router-dom';
+import { usePathname } from 'next/navigation';
+import Link from 'next/link'
 import '@/style/top.css';
 
 const Top = () => {
-  let location = useLocation().pathname;
+  let pathname = usePathname();
   let active;
-  if (location.length > 1) active = true; // si esta en una pagina diferente a / sera true
+  if (pathname === '/') active = true; // si esta en una pagina diferente a / sera true
 
   //////////////////////////////////////////////
   const { dark, setDark, language, setLanguage } = useContext(Contexto);
@@ -16,13 +18,13 @@ const Top = () => {
   useEffect(() => {
     document
       .getElementsByTagName('HTML')[0]
-      .setAttribute('data-theme', localStorage.getItem('theme'));
+      .setAttribute('data-theme', String(localStorage.getItem('theme')));
   }, [dark]);
 
   useEffect(() => {
     document
       .getElementsByTagName('HTML')[0]
-      .setAttribute('lang', localStorage.getItem('language'));
+      .setAttribute('lang', String(localStorage.getItem('language')));
   }, [language]);
 
   function changeTheme() {
@@ -61,9 +63,8 @@ const Top = () => {
       </div>
 
       {active ? (
-        <Link to={'/'} className="toHome">
-          {' '}
-          <BackIcon /> <b>Home</b>{location}
+        <Link href='/'>
+          <BackIcon /> <b>Home</b>{pathname}
         </Link>
       ) : (
         null
