@@ -1,4 +1,5 @@
-const Tailwind = () => (
+/* eslint-disable max-len */
+const Tailwind: React.FC = () => (
   <svg
     data-name="Layer 1"
     xmlns="http://www.w3.org/2000/svg"

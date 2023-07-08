@@ -1,4 +1,5 @@
-const Mongo = (props) => (
+/* eslint-disable max-len */
+const Mongo: React.FC = () => (
   <svg
     width={120}
     height={60}

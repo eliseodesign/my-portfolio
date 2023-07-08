@@ -1,6 +1,12 @@
-import { useEffect, Children} from 'react'
-const Slider = ({children, of}) => {
+'use client'
+import { useEffect, Children, ReactNode } from 'react';
 
+interface SliderProps {
+  children: ReactNode;
+  of: string;
+}
+
+const Slider: React.FC<SliderProps> = ({ children, of }) => {
   useEffect(() => {
     const count = Children.count(children);
 
@@ -11,16 +17,16 @@ const Slider = ({children, of}) => {
     const styleSheet = document.createElement('style');
     styleSheet.innerHTML = keyframe;
     document.head.appendChild(styleSheet);
-    
-    const slider = document.querySelector(`.slider-${of}`);
-    slider.style.animation = `scrolling-${of} ${count*3}s linear infinite`;
-    console.log(slider)
-    for(let i=0; i<count; i++) {
+
+    const slider = document.querySelector(`.slider-${of}`) as HTMLElement;
+    slider.style.animation = `scrolling-${of} ${count * 3}s linear infinite`;
+
+    for (let i = 0; i < count; i++) {
       slider.appendChild(slider.children[i].cloneNode(true));
     }
-  }, [])
+  }, [children, of]);
 
-  return ( 
+  return (
     <div className="slider">
       <div className="marquee">
         <ul className={`marquee-content slider-${of}`}>
@@ -30,7 +36,7 @@ const Slider = ({children, of}) => {
         </ul>
       </div>
     </div>
-   );
-}
- 
+  );
+};
+
 export default Slider;

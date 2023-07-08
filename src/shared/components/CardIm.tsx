@@ -1,32 +1,31 @@
 import React, { useContext } from 'react';
 import {  usePathname } from 'next/navigation';
 import { Contexto } from '@/shared/utils/context/Contexto';
+import { routesContstants } from '@/shared/constants'
 
 import '@/style/page.css';
 
 function CardIm() {
   // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
   let pathname = usePathname();
+  console.log(pathname)
   let active;
-  if (pathname === '/') active = true; // si esta en una pagina diferente a / sera true
+  if (pathname !== '/home') active = true; // si esta en una pagina diferente a / sera true
 
-  const { dataLanguage } = useContext(Contexto);
+  const { dataLanguage, language } = useContext(Contexto);
+  const index = language === 'en' ? 1 : 2
   const { home } = dataLanguage
 
-  let iPage = 0; // le asignamos un indice para buscar en dataLanguage
-  switch (pathname) {
-    case '/about-me':
-      iPage = 0;
-      break;
-    case '/projects':
-      iPage = 1;
-      break;
-    case '/contact':
-      iPage = 2;
-      break;
-    case '/blog':
-      iPage = 3;
-      break;
+  let viewNanme: string = ''
+  {
+    // buttons 
+    Object.entries(routesContstants).map(([_, value], i) => {
+      const route = value[0];
+      if(route[0] === pathname) {
+        viewNanme = route[index]
+      }
+
+    })
   }
 
   return (
@@ -39,7 +38,7 @@ function CardIm() {
         </div>
         <div className="page__info">
           {active ? (
-            <h1>{home.buttons[iPage]}</h1>
+            <h1>{ viewNanme }</h1>
           ) : (
             <>
               <h1>Eliseo Arévalo</h1>
