@@ -25,6 +25,13 @@ const seoByRoute: Record<RouteKey, SEO> = {
             'Desarrollador Next 13 - React',
             'Desarrollo profesional de aplicaciones web',],
     },
+    ABOUT:{
+      title: `${inmutableConstants.NOMBRE} | ${routesContstants.PROJECTS[0][1]}`,
+      description: `Información sobre ${inmutableConstants.NOMBRE}`,
+      keywords: [
+        'experiencia', 'typescript', 'tecnologías', 'desarrollo'
+      ]
+    },
     PROJECTS: {
       title: `${inmutableConstants.NOMBRE} | ${routesContstants.PROJECTS[0][1]}`,
       description: 'Proyectos Fullstack',
