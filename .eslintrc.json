@@ -1,0 +1,16 @@
+{
+  "extends":["next/core-web-vitals", "airbnb", "plugin:prettier/recommended"],
+  "env":{
+    "browser":true,
+    "node": true,
+    "jest": false
+  },
+  "parserOptions": {
+    "ecmaVersion": 2020,
+    "sourceType": "module"
+  },
+  "rules": {
+    "max-len":["error", 140],
+    "quotes":[2, "single", { "avoidEscape": true }]
+  }
+}
