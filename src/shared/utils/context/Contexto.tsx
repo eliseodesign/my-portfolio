@@ -1,11 +1,15 @@
 'use client'
+interface ReactNode {
+  children: React.ReactNode
+}
+
 import { createContext, useState } from 'react';
 import en from './en';
 import es from './es';
 
-export const Contexto = createContext();
+export const Contexto = createContext({});
 
-export const Data = ({ children }) => {
+export const Data = ({ children }:ReactNode) => {
   const [language, setLanguage] = useState(
     localStorage.getItem('language') === 'es' ? 'es' : 'en'
   );

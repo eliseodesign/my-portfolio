@@ -1,4 +1,7 @@
-const AGE = new Date().getFullYear() - 2004;
+/* eslint-disable max-len */
+import { inmutableConstants } from '@/shared/constants'
+const { AGE } = inmutableConstants
+
 const Mydescription = () => {
   return ( 
   <p className="description">
@@ -19,8 +22,7 @@ const es =
     profile: 'Desarrollador Frontend',
     gmail: 'eliseoarevalo20@gmail.com',
     number: 74629868,
-    greating: 'Bienvenido a mi web... ¿Ahora a dondé quieres ir?',
-    buttons: ['Sobre mí', 'Proyectos', 'Contacto', '<Blog />', 'Servicios'],
+    greating: 'Bienvenido a mi web... ¿Ahora a dondé quieres ir?'
   },
   aboutMe:{ 
     title: 'Sobre mí',

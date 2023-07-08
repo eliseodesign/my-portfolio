@@ -2,10 +2,12 @@ interface Constants {
   readonly NOMBRE: string;
   readonly NOMBRE_COMPLETO: string;
   readonly EMAIL: string;
+  readonly AGE: number
 }
 
 export interface RoutesConstants {
   readonly HOME: string[][];
+  readonly ABOUT: string[][];
   readonly PROJECTS: string[][];
   readonly CONTACT: string[][];
   readonly BLOG: string[][];
@@ -17,7 +19,8 @@ export interface RoutesConstants {
 export const inmutableConstants: Constants = {
   NOMBRE: 'Eliseo Arévalo',
   NOMBRE_COMPLETO: 'Eliseo Francisco Arévalo',
-  EMAIL: 'eliseo.arev@gmail.com'
+  EMAIL: 'eliseo.arev@gmail.com',
+  AGE:  new Date().getFullYear() - 2004
 };
 
 /**
@@ -25,15 +28,18 @@ export const inmutableConstants: Constants = {
 */
 export const routesContstants: RoutesConstants = {
   HOME: [
-      ['/home', 'Home']
+      ['/home', 'Home', 'Home']
+  ],
+  ABOUT:[
+    ['/about', 'About me', 'Sobre mí']
   ],
   PROJECTS: [
-      ['/projects', 'Projects']
+      ['/projects', 'Projects', 'Proyectos']
   ],
   CONTACT: [
-      ['/contact', 'Contact']
+      ['/contact', 'Contact', 'Contacto']
   ],
   BLOG: [
-    ['/blog', 'Blog']
+    ['/blog', '<Blog />', '<Blog />']
   ]
 };
