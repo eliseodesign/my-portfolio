@@ -1,6 +1,7 @@
 import { useContext } from 'react'
 import { Contexto } from '@/shared/utils/context/Contexto'
 import { projects } from '@/shared/utils/context/projects'
+import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
 import { BiWindowOpen } from 'react-icons/bi'
 
@@ -19,12 +20,14 @@ function Projects() {
 						className="card"
 					>
 						<div className="card-img">
-							<img
+							<Image
 								src={
 									'https://eliseodesign.github.io/assets/images/' +
 									p.reference +
 									'.png'
 								}
+								width={250}
+								height={250}
 								alt={p.reference}
 							/>
 						</div>

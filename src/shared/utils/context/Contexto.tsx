@@ -18,11 +18,12 @@ export const Contexto = createContext({
 
 export const Data = ({ children }:ReactNode) => {
   const [language, setlanguage] = useState(
-    localStorage.getItem('language') === 'es' ? 'es' : 'en'
+    typeof window !== 'undefined' && localStorage.getItem('language') === 'es' ? 'es' : 'en'
   );
   const [dark, setdark] = useState(
-    localStorage.getItem('theme') === 'dark' ? true : false
+    typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark' ? true : false
   );
+
 
   const dataLanguage = language === 'en' ? en : es;
 
