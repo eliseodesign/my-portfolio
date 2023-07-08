@@ -10,7 +10,7 @@ import '@/style/top.css';
 const Top = () => {
   let pathname = usePathname();
   let active;
-  if (pathname === '/') active = true; // si esta en una pagina diferente a / sera true
+  if (pathname === '/home') active = true; // si esta en una pagina diferente a / sera true
 
   //////////////////////////////////////////////
   const { dark, setDark, language, setLanguage } = useContext(Contexto);
@@ -62,8 +62,8 @@ const Top = () => {
       
       </div>
 
-      {active ? (
-        <Link href='/'>
+      {!active ? (
+        <Link href='/' className='toHome'>
           <BackIcon /> <b>Home</b>{pathname}
         </Link>
       ) : (

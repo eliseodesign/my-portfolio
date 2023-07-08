@@ -2,11 +2,11 @@ import React, { useContext } from 'react';
 import {  usePathname } from 'next/navigation';
 import { Contexto } from '@/shared/utils/context/Contexto';
 import { routesContstants } from '@/shared/constants'
-
+import Image from 'next/image'
 import '@/style/page.css';
 
 function CardIm() {
-  // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
+  // CardIm ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
   let pathname = usePathname();
   console.log(pathname)
   let active;
@@ -33,12 +33,12 @@ function CardIm() {
       <div className={active ? 'page page-active' : 'page'}>
         <div className="page__photo">
           <div className="photo__circulo">
-            <img src="/foto.png" alt="" className="photo__img" />
+            <Image src="/foto.png" width={170} height={17} alt="" className="photo__img" />
           </div>
         </div>
         <div className="page__info">
           {active ? (
-            <h1>{ viewNanme }</h1>
+            <h1>{ viewNanme } </h1>
           ) : (
             <>
               <h1>Eliseo Arévalo</h1>
