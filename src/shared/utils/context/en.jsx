@@ -17,30 +17,30 @@ const Mydescription = () => {
 const en = 
 {
   home:{
-    title: "index",
-    name: "Eliseo Arévalo",
-    profile: "Frontend Developer",
-    gmail: "eliseoarevalo20@gmail.com",
+    title: 'index',
+    name: 'Eliseo Arévalo',
+    profile: 'Frontend Developer',
+    gmail: 'eliseoarevalo20@gmail.com',
     number: 74629868,
-    greating: "Welcome to my web... where do you want to go?",
-    buttons: ["About me", "Projects", "Contact", "<Blog />", "Services"],
+    greating: 'Welcome to my web... where do you want to go?',
+    buttons: ['About me', 'Projects', 'Contact', '<Blog />', 'Services'],
   },
   aboutMe:{
-    title: "About me",
+    title: 'About me',
     description: <Mydescription/>,
-    myTec:"What I do?"
+    myTec:'What I do?'
   },
   projects:{
   },
   contact:{
     form:{
-      name:"Name",
-      lastName:"Last Name",
-      affair:"Affair"
+      name:'Name',
+      lastName:'Last Name',
+      affair:'Affair'
     }
   },
   blog:{
-    description:"This site is in contruction but you can visit my repository of my notes"
+    description:'This site is in contruction but you can visit my repository of my notes'
   }
 };
 

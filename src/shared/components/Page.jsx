@@ -1,9 +1,9 @@
-import React, { useContext, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
-import { Contexto } from "../../context/Contexto";
-import foto from "../../img/foto.png"
+import React, { useContext, useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import { Contexto } from '../../context/Contexto';
+import foto from '../../img/foto.png'
 
-import "../../style/page.css";
+import '../../style/page.css';
 
 function Page() {
   // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
@@ -15,16 +15,16 @@ function Page() {
 
   let iPage; // le asignamos un indice para buscar en dataLanguage
   switch (location) {
-    case "/about-me":
+    case '/about-me':
       iPage = 0;
       break;
-    case "/projects":
+    case '/projects':
       iPage = 1;
       break;
-    case "/contact":
+    case '/contact':
       iPage = 2;
       break;
-    case "/blog":
+    case '/blog':
       iPage = 3;
       break;
   }
@@ -32,14 +32,14 @@ function Page() {
   return (
     <>
       {active ? (
-        <Link to={"/"} className="toHome">
-          {" "}
+        <Link to={'/'} className="toHome">
+          {' '}
           <BackIcon /> <b>Home</b>{location}
         </Link>
       ) : (
-        ""
+        ''
       )}
-      <div className={active ? "page page-active" : "page"}>
+      <div className={active ? 'page page-active' : 'page'}>
         <div className="page__photo">
           <div className="photo__circulo">
             <img src={foto} alt="" className="photo__img" />

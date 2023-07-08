@@ -1,5 +1,5 @@
-import { useContext } from "react";
-import { Contexto } from "@/shared/utils/context/Contexto"
+import { useContext } from 'react';
+import { Contexto } from '@/shared/utils/context/Contexto'
 
 function Form() {
   // const { dataLanguage } = useContext(Contexto);

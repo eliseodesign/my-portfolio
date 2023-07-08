@@ -14,30 +14,30 @@ const Mydescription = () => {
 const es = 
 {
   home:{ 
-    title: "index",
-    name: "Eliseo Arévalo",
-    profile: "Desarrollador Frontend",
-    gmail: "eliseoarevalo20@gmail.com",
+    title: 'index',
+    name: 'Eliseo Arévalo',
+    profile: 'Desarrollador Frontend',
+    gmail: 'eliseoarevalo20@gmail.com',
     number: 74629868,
-    greating: "Bienvenido a mi web... ¿Ahora a dondé quieres ir?",
-    buttons: ["Sobre mí", "Proyectos", "Contacto", "<Blog />", "Servicios"],
+    greating: 'Bienvenido a mi web... ¿Ahora a dondé quieres ir?',
+    buttons: ['Sobre mí', 'Proyectos', 'Contacto', '<Blog />', 'Servicios'],
   },
   aboutMe:{ 
-    title: "Sobre mí",
+    title: 'Sobre mí',
     description:<Mydescription />,
-    myTec:"¿Qué puedo hacer?"
+    myTec:'¿Qué puedo hacer?'
   },
   projects:{
   },
   contact:{
     form:{
-      name:"Tus nombres",
-      lastName:"Tus Apellidos",
-      affair:"Asunto"
+      name:'Tus nombres',
+      lastName:'Tus Apellidos',
+      affair:'Asunto'
     }
   },
   blog:{
-    description:"Esta página no esta terminada pero puedes visitar el repositorio con mis notas"
+    description:'Esta página no esta terminada pero puedes visitar el repositorio con mis notas'
   }
 };
 

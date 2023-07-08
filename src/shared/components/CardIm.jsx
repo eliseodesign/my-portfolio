@@ -1,9 +1,9 @@
-import React, { useContext } from "react";
-import {  useLocation } from "react-router-dom";
-import { Contexto } from "@/shared/utils/context/Contexto";
-import foto from "@/shared/assets/img/foto.png"
+import React, { useContext } from 'react';
+import {  useLocation } from 'react-router-dom';
+import { Contexto } from '@/shared/utils/context/Contexto';
+import foto from '@/shared/assets/img/foto.png'
 
-import "@/style/page.css";
+import '@/style/page.css';
 
 function CardIm() {
   // PAGE ES EL COMPONENTE QUE AL IGUAL QUE LOS SVGs top y bottom ESTARA EN TODAS LAS VISTAS
@@ -16,23 +16,23 @@ function CardIm() {
 
   let iPage; // le asignamos un indice para buscar en dataLanguage
   switch (location) {
-    case "/about-me":
+    case '/about-me':
       iPage = 0;
       break;
-    case "/projects":
+    case '/projects':
       iPage = 1;
       break;
-    case "/contact":
+    case '/contact':
       iPage = 2;
       break;
-    case "/blog":
+    case '/blog':
       iPage = 3;
       break;
   }
 
   return (
     <>
-      <div className={active ? "page page-active" : "page"}>
+      <div className={active ? 'page page-active' : 'page'}>
         <div className="page__photo">
           <div className="photo__circulo">
             <img src={foto} alt="" className="photo__img" />

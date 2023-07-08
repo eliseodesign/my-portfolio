@@ -1,6 +1,6 @@
 
 import { CardInfo, ContactForm } from './components'
-import "@/style/contact.css"
+import '@/style/contact.css'
 
 
 function Contact() {

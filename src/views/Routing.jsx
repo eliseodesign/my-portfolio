@@ -1,16 +1,16 @@
 import { Routes, Route } from 'react-router-dom'
-import Index from "./index"
-import AboutMe from "./about"
-import Projects from "./projects"
-import Contact from "./contact"
-import Blog from "./blog"
+import Index from './index'
+import AboutMe from './about'
+import Projects from './projects'
+import Contact from './contact'
+import Blog from './blog'
 import NotFount from './NotFount.jsx'
 
 const Routing = () => {
   return ( 
     <div>
       <Routes>
-        <Route path={"/"} element={<Index />}/>
+        <Route path={'/'} element={<Index />}/>
         <Route path="/about-me" element={<AboutMe />} />
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />

@@ -1,12 +1,12 @@
-import { useContext, useEffect } from "react";
-import { Contexto } from "@/shared/utils/context/Contexto";
-import Slider from "./components/Slider"
-import "@/style/aboutme.css"
+import { useContext, useEffect } from 'react';
+import { Contexto } from '@/shared/utils/context/Contexto';
+import Slider from './components/Slider'
+import '@/style/aboutme.css'
 
 import { SvgCsharp, SvgMongo, SvgTailwind } from './components'
 
-import { FaJsSquare, FaNode, FaReact, FaSass } from "react-icons/fa";
-import { DiMsqlServer, DiSqllite, DiDotnet} from "react-icons/di";
+import { FaJsSquare, FaNode, FaReact, FaSass } from 'react-icons/fa';
+import { DiMsqlServer, DiSqllite, DiDotnet} from 'react-icons/di';
 
 function AboutMe() {
   const { dataLanguage } = useContext(Contexto);
