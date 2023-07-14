@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
-    // "types": ["markdown-it"],
-    "target": "es5",
+    "types": ["markdown-it"],
+    "target": "ESNext",
     "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
