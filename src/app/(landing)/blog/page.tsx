@@ -5,11 +5,12 @@ function Blog() {
   const blogs = getBlogs()
   console.log(blogs)
   return (
-    <div>
+    <div className='blog-page'>
+      <h3>Blogs rapidos sobre algunos temas interesantes</h3> <br />
       {
         blogs.map( (blog, i) => (
           <div key={i}>
-            <h2><Link href={blog.link}/> {blog.meta.title} </h2>
+            <h2> <Link href={`blog/${blog.link}`}>{blog.meta.title}</Link></h2>
             <p>{blog.meta.description} </p>
           </div>
         ))
