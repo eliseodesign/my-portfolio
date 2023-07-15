@@ -3,7 +3,6 @@ import { useContext, useEffect } from 'react';
 import { Contexto } from '@/shared/utils/context/Contexto';
 import Slider from './components/Slider'
 import Image from 'next/image'
-import '@/style/aboutme.css'
 
 import { SvgCsharp, SvgMongo, SvgTailwind } from './components'
 
@@ -16,10 +15,9 @@ function AboutMe(): JSX.Element {
   const { aboutMe } = dataLanguage
 
   return (
-    <div className="about-me">
-      <div className="info-im">
-        <Image src="/im.jfif" width={150} height={150} alt="" />
-
+    <>
+      <div className="about-info">
+        <Image src="/im.jfif" width={150} height={150} alt="eliseodesign"/>
         {aboutMe.description}
       </div>
 
@@ -44,7 +42,7 @@ function AboutMe(): JSX.Element {
         <DiSqllite />
       </Slider>
 
-    </div>
+    </>
   )
 }
 

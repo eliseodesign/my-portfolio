@@ -1,8 +1,7 @@
-@import url(./var.css);
-.about-me{
-  opacity: .7;
+.about-page{
+  opacity: .8;
 }
-.info-im img{
+.about-info img{
   width: 30%;
   min-width: 150px;
   float: right;

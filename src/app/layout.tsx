@@ -1,7 +1,5 @@
 'use client'
-interface ReactNode {
-  children: React.ReactNode
-}
+import { ReactNode } from '@/shared/interface/ReadNode'
 // components 
 import Top from '@/shared/components/Top';
 import CardIm from '@/shared/components/CardIm'
