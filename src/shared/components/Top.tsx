@@ -64,7 +64,7 @@ const Top = () => {
 
       {!active ? (
         <Link href='/' className='toHome'>
-          <BackIcon /> <b>Home</b>{pathname}
+          <BackIcon /> <b>Home</b>{`${pathname.split('/')[0]}/${pathname.split('/')[1]}`}
         </Link>
       ) : (
         null

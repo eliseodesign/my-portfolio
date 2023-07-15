@@ -1,9 +1,5 @@
 .markdown-container *::selection{
-  background-color: #dbba36;
-}
-.markdown-container a,
-.markdown-container a:visited {
-  text-decoration: underline;
+  background-color: #40b950;
 }
 
 .markdown-container a[href]:after {
@@ -89,7 +85,7 @@
 .markdown-container .splendor-h3,
 .markdown-container h4,
 .markdown-container .splendor-h4 {
-  margin: 1.414rem 0 .5rem;
+  /* margin: 1.414rem 0 .5rem; */
   font-weight: inherit;
   line-height: 1.42;
 }
@@ -97,7 +93,7 @@
 .markdown-container h1,
 .markdown-container .splendor-h1 {
   margin-top: 0;
-  font-size: 3.998rem;
+  font-size: 3rem;
 }
 
 
@@ -186,12 +182,13 @@
 
 /* Estilos para h1 */
 .markdown-container h1 {
-  padding: 4rem 0 !important;
+  padding: 0rem 0 !important;
+  color: #2980b9;
+  font-weight: bold;
 }
 
 /* Estilos para p */
 .markdown-container p {
-  color: #555;
   height: auto;
   line-height: 1.45;
 }
@@ -213,14 +210,16 @@
 /* Estilos para a, a:visited */
 .markdown-container a,
 .markdown-container a:visited {
-  color: #3498db;
+  color: #2980b9;
+  font-weight: bold;
+  text-decoration: none;
 }
 
 /* Estilos para a:hover, a:focus, a:active */
 .markdown-container a:hover,
 .markdown-container a:focus,
 .markdown-container a:active {
-  color: #2980b9;
+  color: #164c70;
 }
 
 .markdown-container pre {
