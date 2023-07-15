@@ -1,5 +1,6 @@
 import { getBlogs } from './service'
 import Link from 'next/link'
+import '@/style/blog.css'
 
 function Blog() {
   const blogs = getBlogs()
@@ -9,9 +10,11 @@ function Blog() {
       <h3>Blogs rapidos sobre algunos temas interesantes</h3> <br />
       {
         blogs.map( (blog, i) => (
-          <div key={i}>
-            <h2> <Link href={`blog/${blog.link}`}>{blog.meta.title}</Link></h2>
-            <p>{blog.meta.description} </p>
+          <div key={i} className='blog-link'>
+            <Link href={`blog/${blog.link}`}>
+              <h2> {blog.meta.title} </h2>
+              <p>{blog.meta.description} </p>
+            </Link>
           </div>
         ))
       }

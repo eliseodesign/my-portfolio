@@ -3,7 +3,7 @@ import { Article, MetaData } from './interface/';
 import path from 'path'
 // import second from 'js-'
 
-const blogDir = path.join(process.cwd(), 'src', 'pages', 'blog')
+const blogDir = path.join(process.cwd(), 'src', 'app', 'blog', '(articles)')
 
 export const getBlogs = (): Article[] => { 
   const articles: Article[] = fs.readdirSync(blogDir).map(file => {
