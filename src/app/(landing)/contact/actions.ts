@@ -8,8 +8,6 @@ interface actionData {
 }
 
 export async function createMessageContact(data: actionData): Promise<boolean> {
-  // const clientIp = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
-  // console.log('IP del cliente:', clientIp);
   try {
     const headers = Headers()
     const ip = headers.get('x-forwarded-for')!.split(/, /)[0] 
