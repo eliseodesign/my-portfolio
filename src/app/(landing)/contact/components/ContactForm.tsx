@@ -75,7 +75,7 @@ export const ContactForm: React.FC = () => {
         .max(20, 'Must be less than 20 characters')
         .required('Username is required')
         .matches(
-          /^[a-zA-Z ]+$/,
+          /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
           'Cannot contain special characters or number'
         ),
       subject: Yup.string()
