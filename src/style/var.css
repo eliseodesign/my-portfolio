@@ -1,7 +1,7 @@
 html {
   --background: linear-gradient(180deg, #D9D9D9 0%, #D9D9D9 48.44%, #67B6FF 100%);
   --background: var(--primary);
-  --primary: #D9D9D9;
+  --primary: #adadad;
   --color:#81C2FF;
   --text-color: #282c34;
 }
