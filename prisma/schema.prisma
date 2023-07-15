@@ -14,6 +14,6 @@ model messageContact {
   id Int @id @default(autoincrement())
   name String 
   subject String
-  day DateTime
-  ipUser String
+  day DateTime @default(now())
+  ipUser String @unique
 }
