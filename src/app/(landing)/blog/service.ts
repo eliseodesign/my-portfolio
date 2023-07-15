@@ -1,7 +1,6 @@
 import fs from 'fs'
 import { Article, MetaData } from './interface/';
 import path from 'path'
-// import second from 'js-'
 
 const blogDir = path.join(process.cwd(), 'src', 'app', 'blog', '(articles)')
 
