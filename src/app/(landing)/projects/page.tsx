@@ -1,5 +1,5 @@
-import { useContext } from 'react'
-import { Contexto } from '@/shared/utils/context/Contexto'
+// import { useContext } from 'react'
+// import { Contexto } from '@/shared/utils/context/Contexto'
 import { projects } from '@/shared/utils/context/projects'
 import Image from 'next/image'
 import { FaGithub } from 'react-icons/fa'
@@ -8,7 +8,7 @@ import { BiWindowOpen } from 'react-icons/bi'
 import '@/style/projects.css'
 
 function Projects() {
-	const { dataLanguage } = useContext(Contexto)
+	// const { dataLanguage } = useContext(Contexto)
 
 	return (
 		<div>

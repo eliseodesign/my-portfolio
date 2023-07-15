@@ -59,7 +59,7 @@ html[data-theme="dark"] .back{
 .page__info{
   width: 100%;
   margin-top: -85px;
-  padding-top: 120px;
+  padding-top: 110px;
   padding-bottom: 20px;
 
   background: var(--text-color);
@@ -75,18 +75,20 @@ html[data-theme="dark"] .back{
 }
 
 .page__info h1{
-  font-size: 2em;
+  font-size: 1.7em;
+  opacity: .7;
   margin: 0em 0em .5em; 
 }
 
-h2{
+.page h2{
   font-size: 1em;
+  opacity: .6;
   color: var(--color);
 }
-html[data-theme="dark"] h2 {
+/* html[data-theme="dark"] .page h2 {
   opacity: .4;
   color: var(--primary);
-}
+} */
 
 
 /* ! PAGE ACTIVE  */  
@@ -122,11 +124,9 @@ html[data-theme="dark"] h2 {
 .page-active .page__info h1{
   font-size:1.5em;
   margin: 0;
-
 }
 
 /* ? MEDIA QUERIES  */
-
 @media screen and (max-width:530px){
   .toHome{
     text-align: center;
@@ -153,6 +153,4 @@ html[data-theme="dark"] h2 {
   .page-active .page__info{
     width: 70%;
   }
-
-
 }
