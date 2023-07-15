@@ -14,7 +14,7 @@ function CardInfo() {
         <a href="https://api.whatsapp.com/send?phone=+50374629868&text=Hola Eliseo">
           <FaWhatsapp /> <b> +503 74629868</b>
         </a>
-        <a href="">
+        <a href="mailto:eliseo.arev@gmail.com">
           <FaEnvelope /> <b> eliseo.arev@gmail.com</b>
         </a>
       </div>

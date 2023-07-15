@@ -3,6 +3,7 @@ import { useFormik, FormikProvider, Form, useField } from 'formik';
 import './contactForm.css';
 import * as Yup from 'yup';
 import { useState } from 'react';
+import { createMessageContact } from '../actions'
 
 interface FormData {
   username: string;
@@ -31,7 +32,7 @@ const TextInputLiveFeedback: React.FC<{
   return (
     <div
       className={`form-control ${
-        showFeedback ? (meta.error ? 'invalid' : 'valid') : ''
+        showFeedback ? (meta.error ? 'invalid' : 'valid') : null
       }`}
     >
       <div className="flex items-center space-between">
@@ -60,6 +61,7 @@ const TextInputLiveFeedback: React.FC<{
 };
 
 export const ContactForm: React.FC = () => {
+
   const formik = useFormik<FormData>({
     initialValues: {
       username: '',
@@ -67,7 +69,9 @@ export const ContactForm: React.FC = () => {
     },
     onSubmit: async (values) => {
       await sleep(500);
-      alert(JSON.stringify(values, null, 2));
+      // alert(JSON.stringify(values, null, 2));
+      const result = await createMessageContact(values)
+      console.log(result)
     },
     validationSchema: Yup.object({
       username: Yup.string()

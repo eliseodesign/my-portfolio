@@ -6,5 +6,9 @@ const markdocConfig = {
 };
 
 export default withMarkdoc(markdocConfig)({
-  pageExtensions: ['md', 'mdoc', 'js', 'jsx', 'ts', 'tsx']
+  pageExtensions: ['md', 'mdoc', 'js', 'jsx', 'ts', 'tsx'],
+  experimental: {
+    serverActions: true,
+    serverActionsBodySizeLimit: '2mb',
+  },
 });
