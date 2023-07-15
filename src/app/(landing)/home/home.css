@@ -1,17 +1,15 @@
-@import url(./var.css);
-h3{
+h3.home-greating{
   margin: 1em 0;
   opacity: .7;
 }
-
-.select{
+.home-links{
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 1em;
 }
 
-.select a{
+.home-links a{
   font-weight: 600;
   font-size: 1.1em;
   color: var(--color);
@@ -25,15 +23,15 @@ h3{
 }
 
 @media screen and (max-width:720px){
-  .select a{
+  .home-links a{
     height: 100px;
   }
 }
-.select a:hover{
+.home-links a:hover{
   transform: scale(1.03);
 }
 
-html[data-theme="dark"] .select a{
+html[data-theme="dark"] .home-links a{
   color: var(--primary);
   background:var(--color);
 }
