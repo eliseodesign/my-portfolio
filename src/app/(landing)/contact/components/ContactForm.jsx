@@ -2,7 +2,7 @@ import { useContext } from 'react';
 import { Contexto } from '@/shared/utils/context/Contexto'
 
 function Form() {
-  // const { dataLanguage } = useContext(Contexto);
+  // const { dataLanguage } = useContext(Contexto);yarn add formik
   return (
     <form className="contact-form">
       <input type="text" placeholder="Nombre"/>

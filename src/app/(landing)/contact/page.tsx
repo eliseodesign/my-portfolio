@@ -1,4 +1,3 @@
-
 import { CardInfo, ContactForm } from './components'
 import '@/style/contact.css'
 
