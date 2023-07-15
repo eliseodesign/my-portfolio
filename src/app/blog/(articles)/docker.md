@@ -20,7 +20,6 @@ wsl --install debian
 
 Probablemente debas reinicar el PC, al cargar se abrira tu distro y te pedira un **usuario** y **contraseña**
 
----
 
 ## Configuraciones en WSL
 
@@ -37,7 +36,6 @@ Abre tu distro en WSL, puedes hacerlo tipeando `wsl` en cmd o powershell
    sudo apt install apt-transport-https ca-certificates curl software-properties-common
    ```
 
----
 
 ## Instalar Docker
 
@@ -64,7 +62,6 @@ Abre tu distro en WSL, puedes hacerlo tipeando `wsl` en cmd o powershell
    sudo apt install docker-ce docker-ce-cli containerd.io
    ```
 
----
 
 ## Para finalizar
 
