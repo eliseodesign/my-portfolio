@@ -3,17 +3,16 @@ import { useContext } from 'react';
 import Link from 'next/link'
 import { Contexto } from '@/shared/utils/context/Contexto';
 import { routesContstants } from '@/shared/constants'
-import '@/style/index.css';
 
-function Index() {
+function Home() {
   const { dataLanguage, language } = useContext(Contexto);
   const index = language === 'en' ? 1 : 2 // index for array buttons
   const {home} = dataLanguage
   return (
-    <div>
-      <h3>{home.greating}</h3>
+    <>
+      <h3 className='home-greating'>{home.greating}</h3>
 
-      <div className="select">
+      <div className="home-links">
         {
           // buttons 
           Object.entries(routesContstants).map(([_, value], i) => {
@@ -29,8 +28,8 @@ function Index() {
           })
         }
       </div>
-    </div>
+    </>
   );
 }
 
-export default Index;
+export default Home;

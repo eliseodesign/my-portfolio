@@ -24,6 +24,7 @@ function CardIm() {
       if(route[0] === pathname) {
         viewNanme = route[index]
       }
+      if(pathname.includes('blog/')) viewNanme = route[index]
 
     })
   }

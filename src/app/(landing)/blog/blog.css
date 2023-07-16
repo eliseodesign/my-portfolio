@@ -1,0 +1,20 @@
+.blog-page a{
+  color: var(--text-color);
+  text-decoration: solid 2px solid var(--primary);
+}
+.blog-page a:hover{
+  transform: scale(2);
+}
+.blog-link{
+  opacity: .7;
+}
+.blog-link:hover{
+  opacity: 1;
+  transition: all .5s;
+  transform: scale(1.02) rotate(.5deg);
+  cursor: pointer;
+}
+
+.blog-link:hover a h2{
+  color:#237fd4;
+}

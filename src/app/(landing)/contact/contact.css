@@ -1,16 +1,14 @@
-@import url(./var.css);
-
-
-.card-info {
+.contact-info {
   display: flex;
   flex-direction: column;
   align-content: center;
+  margin-bottom: 40px;
 }
 
-.card-info h3{
+.contact-info h3{
   text-align: center;
 }
-.info-links{
+.contact-links{
   height: 30px;
   display: flex;
   justify-content: space-evenly;
@@ -18,36 +16,34 @@
   flex-wrap: wrap;
 
 }
-.card-info a{
+.contact-info a{
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
   line-height: 1.5em;
   color: var(--text-color);
+  opacity: .7;
 }
 
-.card-info a b{
-  font-weight: lighter;
+.contact-info a b{
+  font-weight:400;
 }
 
-
-.card-info svg{
+.contact-info svg{
   margin-right: 3px;
   line-height:2em;
   font-size: 1.5em;
 }
 @media screen and (max-width:720px){
-  .card-info a b{
+  .contact-info a b{
     display: none;
   }
-  .card-info svg{
+  .contact-info svg{
     font-size: 2em;
   }
 }
 
-
-/* ///// */
 .contact-form{
   padding-top: 50px;
 }
