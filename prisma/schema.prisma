@@ -15,5 +15,7 @@ model messageContact {
   name String 
   subject String
   day DateTime @default(now())
-  ipUser String @unique
+  ipUser String
+
+  @@unique([day, ipUser], name: "unique_day_ipUser")
 }
