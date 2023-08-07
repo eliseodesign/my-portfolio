@@ -12,7 +12,8 @@ function Projects() {
 
 	return (
 		<div>
-			{projects.map((p, i) => {
+			<h1>... 404</h1>
+			{/* {projects.map((p, i) => {
 				return (
 					<article
 						key={i}
@@ -60,7 +61,7 @@ function Projects() {
 						</div>
 					</article>
 				)
-			})}
+			})} */}
 		</div>
 	)
 }
