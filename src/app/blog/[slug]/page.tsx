@@ -9,7 +9,7 @@ import { Metadata } from 'next';
 import { components, config } from '../config.markdoc';
 import '../markdown.css'
 
-const ARTICLES_PATH = 'src/app/blog/(articles)';
+const ARTICLES_PATH = 'public/articles';
 const POSTS_DIR = path.join(process.cwd(), ARTICLES_PATH);
 
 type Params = {
