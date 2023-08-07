@@ -61,23 +61,28 @@ const TextInputLiveFeedback: React.FC<{
 };
 
 export const ContactForm: React.FC = () => {
+  const [response, setResponse] = useState<String | null>(null)
 
   const formik = useFormik<FormData>({
     initialValues: {
       username: '',
       subject: '',
     },
-    onSubmit: async (values) => {
+    onSubmit: async (values, { resetForm }) => {
       await sleep(500);
       // alert(JSON.stringify(values, null, 2));
       const result = await createMessageContact(values)
-      console.log(result)
+      if(!result)  setResponse('Ya enviaste un mensaje hoy amigo :c')
+      if(result) {
+        setResponse('Gracias por tu mensaje ❤')
+        resetForm()
+      }
     },
     validationSchema: Yup.object({
       username: Yup.string()
         .min(8, 'Must be at least 8 characters')
         .max(20, 'Must be less than 20 characters')
-        .required('Username is required')
+        .required('Name is required')
         .matches(
           /^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/,
           'Cannot contain special characters or number'
@@ -91,8 +96,11 @@ export const ContactForm: React.FC = () => {
   return (
     <FormikProvider value={formik}>
       <Form>
+        {
+          response && <h2>{response}</h2>
+        }
         <TextInputLiveFeedback
-          label="Username"
+          label="Name"
           id="username"
           name="username"
           helpText="Must be 8-20 characters and cannot contain special characters."
