@@ -7,6 +7,7 @@
 }
 .blog-link{
   opacity: .7;
+  margin-bottom: 1em;
 }
 .blog-link:hover{
   opacity: 1;

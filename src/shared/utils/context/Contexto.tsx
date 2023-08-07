@@ -10,19 +10,22 @@ import { empty } from './dataLanguage'
 
 export const Contexto = createContext({
   language: '',
-   setLanguage:(value:string)=>{},
-   dataLanguage: empty,
-   dark: true,
-   setDark:(value:boolean)=>{}
+  setLanguage: (value: string) => { },
+  dataLanguage: empty,
+  dark: true,
+  setDark: (value: boolean) => { }
 });
 
-export const Data = ({ children }:ReactNode) => {
-  const [language, setlanguage] = useState(
-    typeof window !== 'undefined' && localStorage.getItem('language') === 'es' ? 'es' : 'en'
-  );
-  const [dark, setdark] = useState(
-    typeof window !== 'undefined' && localStorage.getItem('theme') === 'dark' ? true : false
-  );
+export const Data = ({ children }: ReactNode) => {
+  const [language, setlanguage] = useState(() => {
+    const storedLanguage = typeof window !== 'undefined' ? localStorage.getItem('language') : null;
+    return storedLanguage === 'es' ? 'es' : 'en';
+  });
+
+  const [dark, setdark] = useState(() => {
+    const storedTheme = typeof window !== 'undefined' ? localStorage.getItem('theme') : null;
+    return storedTheme === 'dark' ? true : false;
+  });
 
 
   const dataLanguage = language === 'en' ? en : es;
