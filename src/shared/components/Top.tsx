@@ -20,7 +20,7 @@ const Top = () => {
     if (typeof window !== 'undefined') {
       document
         .getElementsByTagName('HTML')[0]
-        .setAttribute('data-theme', localStorage.getItem('theme') || 'dark');
+        .setAttribute('data-theme', localStorage.getItem('theme') || 'light'); //porque por defecto el SSR manda dark false
     }
   }, [dark]);
 
@@ -29,7 +29,7 @@ const Top = () => {
     if (typeof window !== 'undefined') {
       document
         .getElementsByTagName('HTML')[0]
-        .setAttribute('lang', localStorage.getItem('language') || 'es');
+        .setAttribute('lang', localStorage.getItem('language') || 'en'); // por defecto el SSR manda en
     }
   }, [language]);
 
