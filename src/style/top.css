@@ -50,7 +50,7 @@ svg{
   /* opacity: .4; */
   display: block;
   visibility: hidden;
-  width: 120px;
+  width: 100px;
   background-color:var(--text-color); 
   color:var(--primary);
   text-align: center;
@@ -70,8 +70,8 @@ svg{
 }
 
   .tooltip.left .tiptext{
-    top: 10%;
-    right: 110%;
+    top: 0%;
+    right: 120%;
   }
   .tooltip.left .tiptext::after{
     margin-top: -5px;
