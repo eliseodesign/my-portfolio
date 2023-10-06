@@ -1,11 +1,16 @@
 ---
-{"title":".Net en Visual Studio Code", "description":"En esta guias aprenderas a crear proyectos .net desde vsc"}
+{"
+  title":".Net en Visual Studio Code", 
+  "description":"En esta guias aprenderas a crear proyectos .net desde vsc"
+}
 ---
 # Net en Visual Studio Code
 
 Se que como a mi a muchas personas les pudo a ver pasado que Visual Studio era muy pesado para su maquina o simplemente no te gustaba el entorno ni la interfaz de desarrollo.
 
 Pero hay una solución para la mayroia de los casos y es vsc, digo la mayoria y no todos ya que por ejemplo para proyectos winforms o wpf es necesario el preview que ofrece Visual Studio.
+
+![]()
 
 ## Instalar DotNet
 
